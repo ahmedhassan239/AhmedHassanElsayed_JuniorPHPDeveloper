@@ -12,10 +12,10 @@ Route::group(['prefix' => 'root', 'middleware' => ['auth'], 'namespace' => 'Admi
 	 Route::get('adminhome', 'AdminController@index');
 	//clients
       Route::resource('/client','ClientsController');
-	    Route::post('/client/store','ClientsController@store');
+	  Route::post('/client/store','ClientsController@store');
       Route::post('/client/update/', 'ClientsController@update')->name('update');
       Route::get('/client/{id}/delete/', 'ClientsController@destroy')->name('delete');
-	    Route::post('clients/data','ClientsController@anyData');
+	  Route::post('clients/data','ClientsController@anyData');
       Route::get('/clients/{id}/show','ClientsController@showClientData');
     //Services
       Route::post('/service/add','ServicesController@store');
