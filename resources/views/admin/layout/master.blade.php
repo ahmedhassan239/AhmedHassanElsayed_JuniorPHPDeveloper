@@ -1,0 +1,5 @@
+@include('admin/layout/header')
+@include('admin/layout/nav')
+@include('admin/layout/sidebar')
+@include('admin/layout/body')
+@include('admin/layout/footer')
