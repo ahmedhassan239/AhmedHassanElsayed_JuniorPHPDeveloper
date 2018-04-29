@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Task for Technology Space
+                    Ahmed Hassan Task
                 </div>
                 <div class="links">
                     <a href="/cv/Ahmed-Hassan-El-sayed.pdf">Ahmed Hassan</a>

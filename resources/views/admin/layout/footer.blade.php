@@ -25,6 +25,8 @@ FastClick
 <script src="/admin/bower_components/fastclick/lib/fastclick.js"></script>
 AdminLTE App
 <script src="/admin/dist/js/adminlte.min.js"></script>
+{{-- sweetalert --}}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 @yield('footer')
 </body>
 </html>
