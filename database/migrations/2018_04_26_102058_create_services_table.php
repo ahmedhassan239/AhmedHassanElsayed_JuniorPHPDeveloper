@@ -16,7 +16,7 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('client_id')->unsigned();
-            $table->foreign('client_id')->references('id')->on('clients');  
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');  
             $table->string('title');
             $table->string('type');
             $table->string('link');

@@ -9,6 +9,7 @@
     </style>  
 @endsection
 @section('content')
+@include('admin/layout/messages')
 <div class="box-body">
     <table id="clients" class="table table-bordered table-hover">
         <thead>

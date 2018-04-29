@@ -10,6 +10,7 @@
 @section('content')
 	<div class="container">
 		<div class="row">
+			@include('admin/layout/messages')
 			<form action="/root/service/update" method="post" id="update-service-form">
 	        	{{ csrf_field() }}
 	          <div class="form-group">

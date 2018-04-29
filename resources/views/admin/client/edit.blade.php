@@ -10,6 +10,7 @@
 
 @section('content')
 <div class="container">
+    @include('admin/layout/messages')
     <div class="row">
         <legend>Client Update Form</legend>
         <form method="post" action="/root/client/update/" id="update-client-form">

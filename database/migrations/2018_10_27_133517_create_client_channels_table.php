@@ -16,9 +16,9 @@ class CreateClientChannelsTable extends Migration
         Schema::create('client_channels', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('client_id')->unsigned();
-            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');;
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
             $table->integer('channel_id')->unsigned();
-            $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');;  
+            $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
         });
     }
 

@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Ahmed Hassan Task
+                    Ahmed Hassan's Task
                 </div>
                 <div class="links">
                     <a href="/cv/Ahmed-Hassan-El-sayed.pdf">Ahmed Hassan</a>

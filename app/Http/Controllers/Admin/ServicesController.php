@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use App\Services;
+use Session;
 
 class ServicesController extends Controller
 {
@@ -34,9 +35,8 @@ class ServicesController extends Controller
 
   		$service->save();
 
-
-
-  		return Redirect::back()->withFlashMessage('Service Added Successfully');;
+      Session::flash('success','Service Added Successfully!');
+  		return Redirect::back();
   	}
 
     public function edit($id)
@@ -63,7 +63,8 @@ class ServicesController extends Controller
         $serviceupdate = $request->all();
         $service->update($serviceupdate);
         $service->save();
-        return Redirect::back()->withFlashMessage('Service Updated Successfully');
+        Session::flash('success','Service UpdatedSuccessfully!');
+        return Redirect::back();
     }
 
 

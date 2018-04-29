@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Clients;
 use App\Channels;
 use App\ClientChannel;
+use Session;
 
 class ClientsController extends Controller
 {
@@ -47,8 +48,8 @@ class ClientsController extends Controller
             $record->save();
           }
       }
-
-  		return redirect('/root/client')->withFlashMessage('Client Added Successfuly');;
+      Session::flash('success','Client Adde Successfuly');
+      return Redirect::back();
   	}
 
   	public function anyData(Request $request)
@@ -96,7 +97,9 @@ class ClientsController extends Controller
             $record->save();
           }
         }
-        return  redirect('/root/client')->withFlashMessage('Client Updated Successfuly');
+
+        Session::flash('success','Update done Successfuly!');
+        return Redirect::back();
     }
 
     public function destroy($id, Clients $client)

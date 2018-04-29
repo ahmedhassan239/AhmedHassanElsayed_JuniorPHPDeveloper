@@ -9,6 +9,7 @@
 @endsection
 @section('content')    
 <div class="container">
+	@include('admin/layout/messages')
     <div class="row">
         <legend>Client Form</legend>
         <form method="POST" action="/root/client/store" id="client-form">
